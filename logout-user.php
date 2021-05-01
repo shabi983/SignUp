@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header('location: login-user.php');
+header('location: https://github.com/shabi983/SignUp/blob/main/login-user.php');
 ?>
