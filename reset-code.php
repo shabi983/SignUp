@@ -1,8 +1,8 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "https://github.com/shabi983/SignUp/blob/main/controllerUserData.php"; ?>
 <?php 
 $email = $_SESSION['email'];
 if($email == false){
-  header('Location: login-user.php');
+  header('Location: https://github.com/shabi983/SignUp/blob/main/login-user.php');
 }
 ?>
 <!DOCTYPE html>
@@ -11,13 +11,13 @@ if($email == false){
     <meta charset="UTF-8">
     <title>Code Verification</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://github.com/shabi983/SignUp/blob/main/style.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
-                <form action="reset-code.php" method="POST" autocomplete="off">
+                <form action="https://github.com/shabi983/SignUp/blob/main/reset-code.php" method="POST" autocomplete="off">
                     <h2 class="text-center">Code Verification</h2>
                     <?php 
                     if(isset($_SESSION['info'])){
