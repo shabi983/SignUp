@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `userform`
+-- Database: `reg`
 --
 
 -- --------------------------------------------------------
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `usertable`
 --
 
-CREATE TABLE `usertable` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -41,9 +41,9 @@ CREATE TABLE `usertable` (
 --
 
 --
--- Indexes for table `usertable`
+-- Indexes for table `user
 --
-ALTER TABLE `usertable`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -51,9 +51,9 @@ ALTER TABLE `usertable`
 --
 
 --
--- AUTO_INCREMENT for table `usertable`
+-- AUTO_INCREMENT for table `user
 --
-ALTER TABLE `usertable`
+ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
