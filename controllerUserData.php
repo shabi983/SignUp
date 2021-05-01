@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require "connection.php";
+require "https://github.com/shabi983/SignUp/blob/main/connection.php";
 $email = "";
 $name = "";
 $errors = array();
@@ -35,7 +35,7 @@ if(isset($_POST['signup'])){
                 $_SESSION['info'] = $info;
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
-                header('location: user-otp.php');
+                header('location: https://github.com/shabi983/SignUp/blob/main/user-otp.php');
                 exit();
             }else{
                 $errors['otp-error'] = "Failed while sending code!";
@@ -63,7 +63,7 @@ if(isset($_POST['signup'])){
             if($update_res){
                 $_SESSION['name'] = $name;
                 $_SESSION['email'] = $email;
-                header('location: home.php');
+                header('location: https://github.com/shabi983/SignUp/blob/main/home.php');
                 exit();
             }else{
                 $errors['otp-error'] = "Failed while updating code!";
@@ -88,11 +88,11 @@ if(isset($_POST['signup'])){
                 if($status == 'verified'){
                   $_SESSION['email'] = $email;
                   $_SESSION['password'] = $password;
-                    header('location: home.php');
+                    header('location: https://github.com/shabi983/SignUp/blob/main/home.php');
                 }else{
                     $info = "It's look like you haven't still verify your email - $email";
                     $_SESSION['info'] = $info;
-                    header('location: user-otp.php');
+                    header('location: https://github.com/shabi983/SignUp/blob/main/user-otp.php');
                 }
             }else{
                 $errors['email'] = "Incorrect email or password!";
@@ -119,7 +119,7 @@ if(isset($_POST['signup'])){
                     $info = "We've sent a passwrod reset otp to your email - $email";
                     $_SESSION['info'] = $info;
                     $_SESSION['email'] = $email;
-                    header('location: reset-code.php');
+                    header('location: https://github.com/shabi983/SignUp/blob/main/reset-code.php');
                     exit();
                 }else{
                     $errors['otp-error'] = "Failed while sending code!";
@@ -144,7 +144,7 @@ if(isset($_POST['signup'])){
             $_SESSION['email'] = $email;
             $info = "Please create a new password that you don't use on any other site.";
             $_SESSION['info'] = $info;
-            header('location: new-password.php');
+            header('location: https://github.com/shabi983/SignUp/blob/main/new-password.php');
             exit();
         }else{
             $errors['otp-error'] = "You've entered incorrect code!";
@@ -167,7 +167,7 @@ if(isset($_POST['signup'])){
             if($run_query){
                 $info = "Your password changed. Now you can login with your new password.";
                 $_SESSION['info'] = $info;
-                header('Location: password-changed.php');
+                header('Location: https://github.com/shabi983/SignUp/blob/main/password-changed.php');
             }else{
                 $errors['db-error'] = "Failed to change your password!";
             }
@@ -176,6 +176,6 @@ if(isset($_POST['signup'])){
     
    //if login now button click
     if(isset($_POST['login-now'])){
-        header('Location: login-user.php');
+        header('Location: https://github.com/shabi983/SignUp/blob/main/login-user.php');
     }
 ?>
