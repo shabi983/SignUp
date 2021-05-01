@@ -3,7 +3,7 @@
 $email = $_SESSION['email'];
 $password = $_SESSION['password'];
 if($email != false && $password != false){
-    $sql = "SELECT * FROM usertable WHERE email = '$email'";
+    $sql = "SELECT * FROM user WHERE email = '$email'";
     $run_Sql = mysqli_query($con, $sql);
     if($run_Sql){
         $fetch_info = mysqli_fetch_assoc($run_Sql);
@@ -61,7 +61,7 @@ if($email != false && $password != false){
 </head>
 <body>
     <nav class="navbar">
-    <a class="navbar-brand" href="#">Brand name</a>
+    <a class="navbar-brand" href="https://bit.ly/techy-trends">Techy Trends</a>
     <button type="button" class="btn btn-light"><a href="https://github.com/shabi983/SignUp/blob/main/logout-user.php">Logout</a></button>
     </nav>
     <h1>Welcome <?php echo $fetch_info['name'] ?></h1>
