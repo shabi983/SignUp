@@ -1,17 +1,17 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "https://github.com/shabi983/SignUp/blob/main/controllerUserData.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://github.com/shabi983/SignUp/blob/main/style.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
-                <form action="login-user.php" method="POST" autocomplete="">
+                <form action="https://github.com/shabi983/SignUp/blob/main/login-user.php" method="POST" autocomplete="">
                     <h2 class="text-center">Login Form</h2>
                     <p class="text-center">Login with your email and password.</p>
                     <?php
@@ -33,11 +33,11 @@
                     <div class="form-group">
                         <input class="form-control" type="password" name="password" placeholder="Password" required>
                     </div>
-                    <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
+                    <div class="link forget-pass text-left"><a href="https://github.com/shabi983/SignUp/blob/main/forgot-password.php">Forgot password?</a></div>
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="login" value="Login">
                     </div>
-                    <div class="link login-link text-center">Not yet a member? <a href="signup-user.php">Signup now</a></div>
+                    <div class="link login-link text-center">Not yet a member? <a href="https://github.com/shabi983/SignUp/blob/main/signup-user.php">Signup now</a></div>
                 </form>
             </div>
         </div>
