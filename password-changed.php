@@ -1,7 +1,7 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "https://github.com/shabi983/SignUp/blob/main/controllerUserData.php"; ?>
 <?php
 if($_SESSION['info'] == false){
-    header('Location: login-user.php');  
+    header('Location:  https://github.com/shabi983/SignUp/blob/main/login-user.php');  
 }
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ if($_SESSION['info'] == false){
     <meta charset="UTF-8">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://github.com/shabi983/SignUp/blob/main/style.css">
 </head>
 <body>
     <div class="container">
@@ -25,7 +25,7 @@ if($_SESSION['info'] == false){
                 <?php
             }
             ?>
-                <form action="login-user.php" method="POST">
+                <form action="https://github.com/shabi983/SignUp/blob/main/login-user.php" method="POST">
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="login-now" value="Login Now">
                     </div>
